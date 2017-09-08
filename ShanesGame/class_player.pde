@@ -71,7 +71,7 @@ class player {
       }
     }
     //Scene 2 to Scene 1 || DOOR 1
-   if (scene ==2);
+    if (scene ==2);
   }
 
   public void thebox() {

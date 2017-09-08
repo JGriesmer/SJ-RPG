@@ -1,8 +1,8 @@
 //Class
 class menu {
 
-int menuUp; // 0 = Not up, 1 = up
-PImage popup;
+  int menuUp; // 0 = Not up, 1 = up
+  PImage popup;
 
   public void load() {
     popup = loadImage("popup.png");
@@ -26,9 +26,8 @@ PImage popup;
       image(popup, 0, 0, 1920, 1080);
     }
   }
-  
-public int getMenuUp(){
-  return menuUp;
-}
 
+  public int getMenuUp() {
+    return menuUp;
+  }
 }
