@@ -6,6 +6,7 @@ PImage startButtonH;
 boolean start;
 player B;
 menu M;
+controls C;
 
 
 void settings() {
@@ -17,6 +18,7 @@ void setup() {
 
   B = new player(0, 0);
   M = new menu();
+  C = new controls();
   B.initialNum();
   M.load();
   startButton = loadImage("startbutton.png");
@@ -33,7 +35,6 @@ void draw() {
   //Player
   fill(51);
   noStroke();
-  rect(910, 490, 100, 100);
 
   //Menu Page
   if ( start == false) { // Not during start menu
@@ -44,6 +45,8 @@ void draw() {
   // Import Menu Up 
   B.setMenuUp(M.getMenuUp());
   //
+  //PLAYER SPRITE
+  B.sprite();
   //START PAGE
   if (start == true) {
     fill(#e6e6e6);
