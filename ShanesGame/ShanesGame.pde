@@ -21,6 +21,7 @@ void setup() {
   C = new controls();
   B.initialNum();
   M.load();
+  C.update();
   startButton = loadImage("startbutton.png");
   startButtonH = loadImage("startbuttonH.png");
 }
@@ -35,6 +36,7 @@ void draw() {
   //Player
   fill(51);
   noStroke();
+  C.control();
 
   //Menu Page
   if ( start == false) { // Not during start menu

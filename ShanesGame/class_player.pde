@@ -163,9 +163,6 @@ class player {
     textAlign(RIGHT);
     text("X: " + xpos + ", Y: " + ypos, 600, 100);
     text("Scene: " + scene, 1600, 1000);
-    text("Sec: " + s, 200, 800);
-    text("Sec2: " + sTrans, 300, 900);
     text("yesTrans: " + yesTrans, 300, 1000);
-    text("Josef Smells Bad", 700,700);
   }
 }
